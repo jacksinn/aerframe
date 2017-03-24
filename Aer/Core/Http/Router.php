@@ -20,8 +20,10 @@ class Router
 
 
             $controller = $package . "Controller";
-            if (method_exists(static::$appPackageNamespace . $package . $controller, $method)) {
-                return call_user_func(static::$appPackageNamespace . $package . $controller . "::" . $method, $id);
+            if (method_exists(static::$appPackageNamespace . $package . $controller,
+              $method)) {
+                return call_user_func(static::$appPackageNamespace . $package . $controller . "::" . $method,
+                  $id);
             }
 //      else {
 //        header('Location: /404.php');
@@ -29,6 +31,7 @@ class Router
             print_r($_GET);
 
         } else {
+            //@todo return 404
             return \Aer\Base\BaseController::index();
 
         }
