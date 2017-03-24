@@ -1,4 +1,5 @@
 .env.json
+App/Config/config.json
 
 vendor/*
 *.tar
