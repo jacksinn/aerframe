@@ -1,0 +1,8 @@
+vendor/*
+*.tar
+*.zip
+*.tgz
+.env
+
+/*IDE Files*/
+.idea

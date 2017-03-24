@@ -1,0 +1,12 @@
+{
+  "environment": "development",
+  "domain": "mysite.aer",
+  "database": {
+    "driver": "mysql",
+    "username": "aer",
+    "password": "aer",
+    "host": "localhost",
+    "port": 3306,
+    "database": "aer"
+  }
+}
