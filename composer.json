@@ -16,7 +16,8 @@
     ],
     "psr-4": {
       "Aer\\": "Aer/",
-      "App\\": "App/"
+      "App\\": "App/",
+      "Aerc\\":"aerc/src"
     },
     "files": [
     ]
