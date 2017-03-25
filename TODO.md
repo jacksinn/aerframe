@@ -18,7 +18,7 @@ Still have to do everything but let's formalize it a bit
 
 * profile manifests? make it easy to recreate a project.
 
-* change location of aer console. rather focus on commands right now.
+* ~~change location of aer console. rather focus on commands right now.~~
 
 * undecided if i want it to be restful and just have front ends or do REST and templating
 
