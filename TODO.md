@@ -6,3 +6,9 @@ Still have to do everything but let's formalize it a bit
 
 * generate packages command, this will be useful for myself as i build out core packages. might as well eat my own dog food.
 
+* look into creating migrations
+
+* packages should allow for own migrations
+
+* set a standard prefix for package-level migrations to avoid table name conflict
+
