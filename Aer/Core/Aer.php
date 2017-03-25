@@ -10,7 +10,7 @@ class Aer
 
     public static function init()
     {
-        //@todo why was i doing a $conn here?
+        //@todo why was i doing a $conn here? to initialize?
         $conn = MysqlConnection::connect();
 
         if (!file_exists(self::$config_path)) {
