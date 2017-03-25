@@ -1,5 +1,7 @@
 Still have to do everything but let's formalize it a bit
 
+* The images included are from stocksy. Need to change them at some point.
+
 * custom routing - right now everything is based off of package and controller methods
 
 * pretty urls - i thought i did this, look into it

@@ -1,6 +1,6 @@
 AERFRAME v0.1
 
-Uses Twig.
+May use Twig.
 Run composer install/update
 Phpize ext/twig (putting in install script later)
 enable in php.ini -- up to reader for now maybe set vars?
