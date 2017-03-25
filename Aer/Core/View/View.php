@@ -5,7 +5,7 @@ namespace Aer\Core\View;
 
 class View {
 
-  public static function render($template, $vars = null, $template_path = null){
+  public static function render($template, array $vars = null, string $template_path = null){
     $path_arr = explode("/", debug_backtrace()[0]['file']);
     $calling_contoller = array_pop($path_arr);
 

@@ -14,17 +14,20 @@ class Router
         //PARAMETERS WE EXPECT
         //@todo add error handling
         if (!empty($_GET)) {
+            //Based on the Path, See what Package We're Using
+            //@todo too rigid
             $package = "\\" . ucfirst($_GET['package']);
             $method = $_GET['method'];
             $id = $_GET['id'];
-
-
+            //Assuming Package is installed :/
+            //@todo do some error checking and handling -- for everything
             $controller = $package . "Controller";
             if (method_exists(static::$appPackageNamespace . $package . $controller,
               $method)) {
                 return call_user_func(static::$appPackageNamespace . $package . $controller . "::" . $method,
                   $id);
             }
+            //Maybe reimplement this?
 //      else {
 //        header('Location: /404.php');
 //      }
@@ -32,6 +35,7 @@ class Router
 
         } else {
             //@todo return 404
+            //@todo update this? Why is it fully qualified?
             return \Aer\Base\BaseController::index();
 
         }
