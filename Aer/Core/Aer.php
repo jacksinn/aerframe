@@ -19,7 +19,7 @@ class Aer
     }
 
     //@todo return json or null, other methods should handle the response, not her. smells.
-    public static function GetConfigurationOptions(): ?string
+    public static function GetConfigurationOptions()
     {
         if (!file_exists(self::$config_path)) {
             header('Location: /install.php');
