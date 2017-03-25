@@ -12,3 +12,7 @@ Still have to do everything but let's formalize it a bit
 
 * set a standard prefix for package-level migrations to avoid table name conflict
 
+* create an-out-of-the-box cms profile
+
+* profile manifests? make it easy to recreate a project.
+
