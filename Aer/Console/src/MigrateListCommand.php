@@ -1,18 +1,19 @@
 <?php
-namespace Aerc;
+namespace Aer\Console;
+
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class MigrateCommand extends Command
+class MigrateListCommand extends Command
 {
     protected function configure()
     {
-        $this->setName('migrate')->setDescription('Migrates Database');
+        $this->setName('migrate:list')->setDescription('Lists Migrations');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        exec('echo "Making migration..."');
+        exec('echo "Listing migrations..."');
     }
 }

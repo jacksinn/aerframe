@@ -1,18 +1,19 @@
 <?php
-namespace Aerc;
+namespace Aer\Console;
+
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class MigrateListCommand extends Command
+class MakePackageCommand extends Command
 {
     protected function configure()
     {
-        $this->setName('migrate:list')->setDescription('Lists Migrations');
+        $this->setName('make:package')->setDescription('Create a New Package');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        exec('echo "Listing migrations..."');
+        exec('echo "Creating a new Package Stub"');
     }
 }

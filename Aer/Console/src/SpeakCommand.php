@@ -1,18 +1,19 @@
 <?php
-namespace Aerc;
+namespace Aer\Console;
+
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class MakeMigrationCommand extends Command
+class SpeakCommand extends Command
 {
     protected function configure()
     {
-        $this->setName('make:migration')->setDescription('Create a New Database Migration');
+        $this->setName('aer:speak')->setDescription('Speak Message');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        exec('echo "Making a Database Migration"');
+        exec('echo "Hello World"');
     }
 }

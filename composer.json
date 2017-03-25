@@ -1,7 +1,10 @@
 {
   "name": "aer/aer",
   "description": "Aer.",
-  "keywords": ["framework", "aer"],
+  "keywords": [
+    "framework",
+    "aer"
+  ],
   "license": "MIT",
   "type": "project",
   "require": {
@@ -17,7 +20,7 @@
     "psr-4": {
       "Aer\\": "Aer/",
       "App\\": "App/",
-      "Aerc\\":"aerc/src"
+      "Aer\\Console\\": "Aer/Console/src"
     },
     "files": [
     ]
