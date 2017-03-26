@@ -11,5 +11,8 @@
   },
   "packages": {
     "User": "App/Packages/User"
+  },
+  "settings": {
+    "install": "disable"
   }
 }
