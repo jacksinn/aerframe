@@ -10,6 +10,7 @@ if(file_exists(__DIR__ . "/../App/Config/config.json")){
     //Right now I'm just running it without error checking becuase I
     // tear down and build it up so much
     //@todo add installation as an Aer Console command
+    //@todo add profile manifests so users can install a cms or other service
 
     //If already installed, redirect to home page -or- we can put in a
     // notification that it's already installed and to proceed at
