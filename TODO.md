@@ -22,5 +22,10 @@ Still have to do everything but let's formalize it a bit
 
 * undecided if i want it to be restful and just have front ends or do REST and templating
 
-*set some style guidelines
+* set some style guidelines
+
+* should i do migrations with timestamps in one dir or keep them in the package? I like the idea of package cleanliness
+and cohesion
+
+
 

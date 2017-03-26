@@ -56,10 +56,10 @@ class AerModel implements RecordModel
         //It's query time
         $result = $conn->query($sql);
 
-        //If it's broken, return null here. This could probably be a
+        //If it's broken, return empty array. This could probably be a
         // bit prettier.
         if(!$result){
-            return null;
+            return array();
         }
 
         //What Model class is extending this class? Who Am I? Is this

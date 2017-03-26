@@ -30,6 +30,9 @@ class Aer
     }
 
     public static function GetDatabaseOptions(){
+        //Right now this method is grabbing all the options and just
+        // returning the database option. Should I handle that in the
+        //  GetConfigurationOptions method with a parameter?
         return self::GetConfigurationOptions()->database;
     }
 
