@@ -27,5 +27,6 @@ Still have to do everything but let's formalize it a bit
 * should i do migrations with timestamps in one dir or keep them in the package? I like the idea of package cleanliness
 and cohesion
 
+* maybe packages shouldn't be in config since config is ignored
 
 
