@@ -13,8 +13,7 @@ class ArticleController extends AerController {
   }
 
   public static function all(){
-      print "Hello from article";
-    //return View::json(Article::all());
+    return View::json(Article::all());
   }
 
   public static function testshow($id) {

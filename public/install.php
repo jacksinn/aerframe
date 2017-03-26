@@ -2,6 +2,7 @@
 //Gotta have this autoload here since we aren't bootstrapping the site
 require __DIR__.'/../vendor/autoload.php';
 
+use App\Migrations\CreateArticlesTable;
 use App\Migrations\CreateMigrationsTable;
 use App\Migrations\CreateUsersTable;
 
@@ -18,12 +19,14 @@ if(file_exists(__DIR__ . "/../App/Config/config.json")){
     //header("Location: /index.php");
 
     //Ok Let's do some migrations
-    echo "Adding Migrations table...<hr>";
-    echo CreateMigrationsTable::up();
-
-    //@todo see if the user wants to install some common packages like User
-    echo "Adding User table...<hr>";
-    echo CreateUsersTable::up();
+    //echo "Adding Migrations table...<hr>";
+    //echo CreateMigrationsTable::up();
+    //
+    ////@todo see if the user wants to install some common packages like User
+    //echo "Adding User table...<hr>";
+    //echo CreateUsersTable::up();
+    echo "Adding Articles table...<hr>";
+    echo CreateArticlesTable::up();
 
 } else {
     echo "You need to create a config.json first.";
