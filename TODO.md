@@ -22,4 +22,5 @@ Still have to do everything but let's formalize it a bit
 
 * undecided if i want it to be restful and just have front ends or do REST and templating
 
+*set some style guidelines
 
