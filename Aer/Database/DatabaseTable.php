@@ -9,7 +9,7 @@ class DatabaseTable
     public $tableName;
     private $columns = array();
 
-    public function create(){
+    public function create(): ?string {
         //Making this connection I make everywhere. Seriously, stop
         // what you're doing and see if this makes sense to others.
         $conn = MysqlConnection::connect();
@@ -27,14 +27,18 @@ class DatabaseTable
         $create = $sql . " (" . $sql_pk . ", " . $columns_sql . ")";
         $conn->query($create);
         MysqlConnection::close($conn);
+
+        return $this->tableName . " created.";
     }
 
-    public function drop(){
+    public function drop(): ?string {
         $sql = "drop table if exists " . $this->tableName;
 //        print $sql;
         $conn = MysqlConnection::connect();
         $conn->query($sql);
         MysqlConnection::close($conn);
+
+        return $this->tableName . " dropped.";
     }
 
     public function addColumn(string $type, string $name, int $length){

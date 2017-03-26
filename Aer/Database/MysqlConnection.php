@@ -38,7 +38,7 @@ class MysqlConnection implements DatabaseConnection
         return $conn;
     }
 
-    public static function close($connection){
+    public static function close(\mysqli $connection){
         $connection->close();
     }
 
