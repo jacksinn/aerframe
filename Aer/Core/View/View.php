@@ -11,10 +11,13 @@ class View
       array $vars = null,
       string $template_path = null
     ) {
-        //Why am I using debug_backtrace? Maybe to see if BaseController (or whatever) called this.
-        //Aren't $template_path and $path_arr basically the same now except I'm
-        //Exploding then imploding it? Why not set $template_path = debug_backtrace()...
-        //I probably wanted to use the $calling_controller at some point
+        //Why am I using debug_backtrace? Maybe to see if
+        // BaseController (or whatever) called this.
+        //  Aren't $template_path and $path_arr basically the same now
+        //   except I'm Exploding then imploding it? Why not set
+        //    $template_path = debug_backtrace()...
+        //     I probably wanted to use the $calling_controller at some
+        //      point
         $path_arr = explode("/", debug_backtrace()[0]['file']);
 
         //Not doing anything with $calling_controller?
