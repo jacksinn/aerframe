@@ -7,7 +7,7 @@ use App\Migrations\CreateUsersTable;
 
 if(file_exists(__DIR__ . "/../App/Config/config.json")){
     //@todo MAKE SURE AER ISN'T ALREADY INSTALLED!!!!!!!!!
-    //Right now I'm just running it without error checking becuase I
+    //Right now I'm just running it without error checking because I
     // tear down and build it up so much
     //@todo add installation as an Aer Console command
     //@todo add profile manifests so users can install a cms or other service
