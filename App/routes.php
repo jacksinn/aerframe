@@ -7,7 +7,7 @@
  * Routes are auto-created right now based on the Package name and
  * methods within the package.
  * e.g
- *   http://aer.app?user/all
- *   http://aer.app?user/show
+ *   http://aer.app/user/all
+ *   http://aer.app/user/show
  *
  */
