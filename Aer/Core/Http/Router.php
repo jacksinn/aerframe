@@ -34,7 +34,7 @@ class Router
             print_r($_GET);
 
         } else {
-            //@todo return 404
+            //@todo return 404 or index depending on path
             //@todo update this? Why is it fully qualified?
             return \Aer\Base\BaseController::index();
 

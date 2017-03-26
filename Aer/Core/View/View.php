@@ -7,6 +7,7 @@ class View {
 
   public static function render($template, array $vars = null, string $template_path = null){
     $path_arr = explode("/", debug_backtrace()[0]['file']);
+    //Not doing anything with $calling_controller?
     $calling_contoller = array_pop($path_arr);
 
     //@todo im not sure this is how i should be doing this
