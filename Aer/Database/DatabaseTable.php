@@ -10,7 +10,8 @@ class DatabaseTable
     private $columns = array();
 
     public function create(){
-//        print_r($this->columns);
+        //Making this connection I make everywhere. Seriously, stop
+        // what you're doing and see if this makes sense to others.
         $conn = MysqlConnection::connect();
 
         $sql = "create table if not exists " . $this->tableName;
