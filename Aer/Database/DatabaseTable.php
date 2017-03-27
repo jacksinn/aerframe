@@ -19,11 +19,9 @@ class DatabaseTable
         $columns_sql_arr = array();
         $sql_pk = "id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY";
         foreach($this->columns as $column){
-//            print_r($column);
             array_push($columns_sql_arr, $column['name'] . " " . $column['type'] . "(" . $column['length'] . ")");
         }
         $columns_sql = implode(", ", $columns_sql_arr);
-//        print $columns_sql;
         $create = $sql . " (" . $sql_pk . ", " . $columns_sql . ")";
         $conn->query($create);
         MysqlConnection::close($conn);
@@ -33,7 +31,6 @@ class DatabaseTable
 
     public function drop(): ?string {
         $sql = "drop table if exists " . $this->tableName;
-//        print $sql;
         $conn = MysqlConnection::connect();
         $conn->query($sql);
         MysqlConnection::close($conn);
