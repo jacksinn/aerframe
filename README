@@ -1,8 +1,13 @@
 AERFRAME v0.1
 
-May use Twig.
-Run composer install/update
-Phpize ext/twig (putting in install script later)
-enable in php.ini -- up to reader for now maybe set vars?
+#Installation
+Navigate to site root.
+run `composer install`
 
-Follow directions at http://twig.sensiolabs.org/doc/installation.html
+Create a new MySQL database e.g. Aer
+Copy App/Config/example.config.json to App/Config/config.json
+Update database parameters in config.json to point to your Aer database
+
+Setup Aer on Apache to point to the public/ directory
+
+Navigate to the Aer site's install.php in the browser to run the Migration and User migrations
