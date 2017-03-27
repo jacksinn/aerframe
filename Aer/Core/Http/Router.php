@@ -2,6 +2,8 @@
 
 namespace Aer\Core\Http;
 
+use Aer\Base\BaseController;
+
 
 class Router
 {
@@ -44,7 +46,9 @@ class Router
                 header('Location: /404.php');
             }
         } else {
-            header('Location: /404.php');
+            return BaseController::index();
+
+            //header('Location: /index.php');
         }
     }
 
